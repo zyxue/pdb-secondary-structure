@@ -1,19 +1,19 @@
 This repo records details of how the protein secondary structure data is curated.
 
 
-Download secondary structure data
+#### Download secondary structure data
 
 ```
 DATE_STAMP=$(date  +'%Y-%m-%d')
 wget https://cdn.rcsb.org/etl/kabschSander/ss.txt.gz -O ${DATE_STAMP}-ss.txt.gz
 ```
 
-Transform to csv format
+#### Transform to csv format
 ```
 python transform_ss_txt_to_csv.py -i ${DATE_STAMP}-ss.txt.gz
 ```
 
-Download PISCES data, removed peptides with high similarity
+#### Download PISCES data, removed peptides with high similarity
 
 https://academic.oup.com/bioinformatics/article/19/12/1589/258419
 
@@ -36,6 +36,6 @@ In addition:
 * `inclNOTXRAY`: include sequences from non-xray-derived structures (mostly NMR but also including electron diffraction, FTIR, fiber diffraction, etc.). 
 * `inclCA`: include sequences of structures that contain only backbone CA coordinates.
 
-Related Kaggle page:
+#### Related Kaggle page:
 
 https://www.kaggle.com/alfrandom/protein-secondary-structure
