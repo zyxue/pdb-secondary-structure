@@ -35,3 +35,7 @@ In addition:
 
 * `inclNOTXRAY`: include sequences from non-xray-derived structures (mostly NMR but also including electron diffraction, FTIR, fiber diffraction, etc.). 
 * `inclCA`: include sequences of structures that contain only backbone CA coordinates.
+
+Related Kaggle page:
+
+https://www.kaggle.com/alfrandom/protein-secondary-structure
